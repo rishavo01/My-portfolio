@@ -33,11 +33,11 @@ const AboutContent = () => (
   <div className="p-8 font-sans text-gray-800 h-full overflow-y-auto bg-gradient-to-br from-white to-gray-50">
     <div className="flex flex-col items-center mb-8">
       <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 mb-4 shadow-xl flex items-center justify-center text-white text-4xl font-bold border-4 border-white overflow-hidden relative">
-         <span className="z-10"><img src="https://github.com/Cyb3rGhoul/HarshOS/blob/main/src/assets/portimage.png?raw=true" alt="image" /></span>
+         <span className="z-10"><img src="src/assets/portfolio_image.png" alt="image" /></span>
          <div className="absolute inset-0 bg-black/10"></div>
       </div>
-      <h1 className="text-4xl font-bold text-gray-900 tracking-tight">Harsh Shukla</h1>
-      <p className="text-blue-600 font-medium mt-1">Upcoming SDE @ HPE | VIT Bhopal Alum</p>
+      <h1 className="text-4xl font-bold text-gray-900 tracking-tight">Rishav Singh</h1>
+      <p className="text-blue-600 font-medium mt-1">MERN Stack Developer | Class 12 Science | Nepal</p>
     </div>
     
     <div className="max-w-3xl mx-auto space-y-8 pb-8">
@@ -46,10 +46,9 @@ const AboutContent = () => (
            👋 About Me
         </h2>
         <p className="leading-relaxed text-gray-600 text-lg">
-          I am a Computer Science graduate from VIT Bhopal University with a CGPA of 8.81/10. 
-          Currently working as a <span className="font-semibold text-green-700">Upcoming SDE at Hewlett Packard Enterprise</span>.
-          I specialize in building full-stack applications, scalable backend systems, and integrating AI models into production. 
-          Featured on Times Square, NYC for my achievements.
+          I am a passionate <span className="font-semibold text-green-700">MERN Stack Developer</span> from Nepal, currently studying in Class 11 (Science). 
+          I focus on building modern, scalable web applications and continuously improving my skills through real-world projects. 
+          Currently working on an AI-powered flight booking website and a React Native alcohol delivery app for a client.
         </p>
       </section>
 
@@ -60,15 +59,15 @@ const AboutContent = () => (
         <ul className="space-y-3">
           <li className="flex items-start">
             <span className="w-2 h-2 mt-2 mr-3 bg-blue-500 rounded-full flex-shrink-0"></span>
-            <span className="text-gray-700">Internal Winner - Smart India Hackathon '23</span>
+            <span className="text-gray-700">Full-stack MERN Developer with focus on scalable web applications</span>
           </li>
           <li className="flex items-start">
             <span className="w-2 h-2 mt-2 mr-3 bg-purple-500 rounded-full flex-shrink-0"></span>
-            <span className="text-gray-700">Reliance Undergraduate Scholarship 2022 Awardee</span>
+            <span className="text-gray-700">AI-powered flight booking platform developer</span>
           </li>
           <li className="flex items-start">
             <span className="w-2 h-2 mt-2 mr-3 bg-green-500 rounded-full flex-shrink-0"></span>
-            <span className="text-gray-700">Featured on Times Square, New York</span>
+            <span className="text-gray-700">React Native application development experience</span>
           </li>
         </ul>
       </section>
@@ -88,7 +87,7 @@ const SkillsExperienceContent = () => (
         
         <div className="pl-6">
           <span className="text-blue-300">"skills"</span>: [<br/>
-            <span className="pl-4 text-green-300">"C++", "Python", "JavaScript", "React.js", "Node.js", "MongoDB", "TailwindCSS", "Gemini LLM"</span><br/>
+            <span className="pl-4 text-green-300">"JavaScript", "React.js", "React Native", "Node.js", "MongoDB", "TailwindCSS", "Express.js", "Web Development"</span><br/>
           ],
         </div>
 
@@ -96,18 +95,18 @@ const SkillsExperienceContent = () => (
           <span className="text-blue-300">"experience"</span>: [
           <div className="pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
             <span className="text-yellow-300">{`{`}</span><br/>
-            <span className="pl-4 text-sky-300">"company"</span>: <span className="text-orange-300">"Hewlett Packard Enterprise"</span>,<br/>
-            <span className="pl-4 text-sky-300">"role"</span>: <span className="text-orange-300">"Software Development Engineer (Upcoming)"</span>,<br/>
-            <span className="pl-4 text-sky-300">"duration"</span>: <span className="text-orange-300">"Present"</span>,<br/>
-            <span className="pl-4 text-sky-300">"impact"</span>: <span className="text-orange-300">"Working on scalable enterprise solutions and AI integration."</span><br/>
+            <span className="pl-4 text-sky-300">"project"</span>: <span className="text-orange-300">"AI-powered Flight Booking Website"</span>,<br/>
+            <span className="pl-4 text-sky-300">"role"</span>: <span className="text-orange-300">"Full-stack Developer"</span>,<br/>
+            <span className="pl-4 text-sky-300">"status"</span>: <span className="text-orange-300">"In Progress"</span>,<br/>
+            <span className="pl-4 text-sky-300">"tech"</span>: <span className="text-orange-300">"MERN Stack with AI Integration"</span><br/>
             <span className="text-yellow-300">{`},`}</span>
           </div>
           <div className="pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
             <span className="text-yellow-300">{`{`}</span><br/>
-            <span className="pl-4 text-sky-300">"company"</span>: <span className="text-orange-300">"Hewlett Packard Enterprise"</span>,<br/>
-            <span className="pl-4 text-sky-300">"role"</span>: <span className="text-orange-300">"CTY Summer Intern"</span>,<br/>
-            <span className="pl-4 text-sky-300">"duration"</span>: <span className="text-orange-300">"Feb 2025 - July 2025"</span>,<br/>
-            <span className="pl-4 text-sky-300">"impact"</span>: <span className="text-orange-300">"Engineered hybrid RegEx-SVM model for log analysis with 94% accuracy."</span><br/>
+            <span className="pl-4 text-sky-300">"project"</span>: <span className="text-orange-300">"React Native Alcohol Delivery App"</span>,<br/>
+            <span className="pl-4 text-sky-300">"role"</span>: <span className="text-orange-300">"Mobile Developer"</span>,<br/>
+            <span className="pl-4 text-sky-300">"client"</span>: <span className="text-orange-300">"Commercial Client"</span>,<br/>
+            <span className="pl-4 text-sky-300">"tech"</span>: <span className="text-orange-300">"React Native, Firebase"</span><br/>
             <span className="text-yellow-300">{`}`}</span>
           </div>
           ],
@@ -117,9 +116,9 @@ const SkillsExperienceContent = () => (
           <span className="text-blue-300">"education"</span>: [
           <div className="pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
             <span className="text-yellow-300">{`{`}</span><br/>
-            <span className="pl-4 text-sky-300">"college"</span>: <span className="text-orange-300">"VIT Bhopal University"</span>,<br/>
-            <span className="pl-4 text-sky-300">"degree"</span>: <span className="text-orange-300">"B.Tech CSE"</span>,<br/>
-            <span className="pl-4 text-sky-300">"gpa"</span>: <span className="text-orange-300">"8.81/10"</span><br/>
+            <span className="pl-4 text-sky-300">"current"</span>: <span className="text-orange-300">"Class 11 Science"</span>,<br/>
+            <span className="pl-4 text-sky-300">"location"</span>: <span className="text-orange-300">"Nepal"</span>,<br/>
+            <span className="pl-4 text-sky-300">"focus"</span>: <span className="text-orange-300">"Full-stack Web Development"</span><br/>
             <span className="text-yellow-300">{`}`}</span>
           </div>
           ],
@@ -165,17 +164,17 @@ const BrowserContent = () => (
             <Globe className="text-green-500" /> Socials
           </h2>
           <div className="grid grid-cols-2 gap-3">
-            <a href="https://linkedin.com/in/harsh-shukla19" target="_blank" rel="noreferrer" className="flex items-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors gap-3">
+            <a href="https://www.linkedin.com/in/rishav-singh-521538369/" target="_blank" rel="noreferrer" className="flex items-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors gap-3">
               <Linkedin size={20} className="text-blue-700" /> <span className="text-sm font-medium">LinkedIn</span>
             </a>
-            <a href="https://github.com/cyb3rghoul" target="_blank" rel="noreferrer" className="flex items-center p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors gap-3">
+            <a href="https://github.com/rishav690999" target="_blank" rel="noreferrer" className="flex items-center p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors gap-3">
               <Github size={20} className="text-gray-900" /> <span className="text-sm font-medium">GitHub</span>
             </a>
-            <a href="https://www.instagram.com/harshh.dev/" className="flex items-center p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors gap-3">
-              <Instagram size={20} className="text-pink-600" /> <span className="text-sm font-medium">@harshh.dev</span>
+            <a href="https://www.instagram.com/rishav690999/" className="flex items-center p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors gap-3">
+              <Instagram size={20} className="text-pink-600" /> <span className="text-sm font-medium">@rishav690999</span>
             </a>
-             <a href="https://x.com/cypher1911" className="flex items-center p-3 bg-black rounded-lg hover:bg-gray-800 transition-colors gap-3">
-              <Twitter size={20} className="text-white" /> <span className="text-sm font-medium text-white">@cypher1911</span>
+             <a href="https://x.com/Rishav60999" className="flex items-center p-3 bg-black rounded-lg hover:bg-gray-800 transition-colors gap-3">
+              <Twitter size={20} className="text-white" /> <span className="text-sm font-medium text-white">@Rishav60999</span>
             </a>
           </div>
         </div>
@@ -186,21 +185,21 @@ const BrowserContent = () => (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <div className="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
-              <h3 className="font-bold text-lg text-blue-600">Sarovar AI</h3>
-              <p className="text-xs text-gray-500 mt-1 mb-2">ReactJS, Tailwind, Gemini LLM</p>
-              <p className="text-sm text-gray-600">Multilingual AI platform serving 500+ farmers with crop prediction and resource allocation.</p>
+              <h3 className="font-bold text-lg text-blue-600">AI Flight Booking</h3>
+              <p className="text-xs text-gray-500 mt-1 mb-2">MERN Stack, AI Integration</p>
+              <p className="text-sm text-gray-600">Intelligent flight booking platform with AI-powered recommendations and dynamic pricing using machine learning.</p>
             </div>
 
             <div className="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
-              <h3 className="font-bold text-lg text-blue-600">Stay Heaven</h3>
-              <p className="text-xs text-gray-500 mt-1 mb-2">MERN Stack, Socket.io</p>
-              <p className="text-sm text-gray-600">AI-driven booking platform automating 60% of bookings with 95% user satisfaction.</p>
+              <h3 className="font-bold text-lg text-blue-600">Alcohol Delivery App</h3>
+              <p className="text-xs text-gray-500 mt-1 mb-2">React Native, Firebase, Real-time</p>
+              <p className="text-sm text-gray-600">Full-featured mobile app for alcohol delivery with real-time order tracking, payment integration, and user authentication.</p>
             </div>
 
             <div className="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
-              <h3 className="font-bold text-lg text-blue-600">inVIcTus</h3>
-              <p className="text-xs text-gray-500 mt-1 mb-2">ReactJS, MUI</p>
-              <p className="text-sm text-gray-600">Platform for 5000+ students for course planning and faculty finding.</p>
+              <h3 className="font-bold text-lg text-blue-600">Portfolio OS</h3>
+              <p className="text-xs text-gray-500 mt-1 mb-2">React, TypeScript, Tailwind</p>
+              <p className="text-sm text-gray-600">Interactive macOS-inspired portfolio website showcasing projects, skills, and professional experience through immersive desktop environment.</p>
             </div>
 
           </div>
@@ -319,16 +318,16 @@ const TerminalContent = () => {
           newHistory.push("  about     - Bio", "  skills    - Tech Stack", "  projects  - My Work", "  socials   - Contact", "  clear");
           break;
         case 'about':
-          newHistory.push("Harsh Shukla | SDE @ HPE");
+          newHistory.push("Rishav Singh | MERN Stack Developer | Nepal");
           break;
         case 'projects':
-          newHistory.push("1. Sarovar AI (React/Gemini)", "2. Stay Heaven (MERN)", "3. inVIcTus (React)");
+          newHistory.push("1. AI Flight Booking Platform (MERN/AI)", "2. React Native Alcohol Delivery App", "3. Portfolio OS (React/TypeScript)");
           break;
         case 'skills':
           newHistory.push("Languages: C++, JS, Python", "Tools: React, Node, Mongo, Git");
           break;
         case 'socials':
-          newHistory.push("GitHub: cyb3rghoul", "LinkedIn: harsh-shukla19");
+          newHistory.push("GitHub: rishav690999", "LinkedIn: rishav-singh-521538369", "Instagram: rishav690999", "Twitter: @Rishav60999");
           break;
         case 'clear':
           setHistory([]);
@@ -475,7 +474,7 @@ const TopBar = ({ title, activeMenu, setActiveMenu }: TopBarProps) => {
 
   const menus: Record<string, MenuItem[]> = {
     "": [
-      { label: "About This Portfolio", action: () => alert("Portfolio OS v2.0 - Built with React") },
+      { label: "About This Portfolio", action: () => alert("Rishav Singh's Portfolio OS - Built with React & TypeScript") },
       { label: "System Preferences...", action: () => {} },
       { type: "separator" },
       { label: "Sleep", action: () => alert("Zzz...") },
@@ -487,7 +486,7 @@ const TopBar = ({ title, activeMenu, setActiveMenu }: TopBarProps) => {
       { label: "New Window", shortcut: "⌘N", action: () => {} },
       { label: "Close Window", shortcut: "⌘W", action: () => {} },
       { type: "separator" },
-      { label: "Download Resume", action: () => window.open("https://linkedin.com/in/harsh-shukla19", "_blank") },
+      { label: "Download Resume", action: () => window.open("https://www.linkedin.com/in/rishav-singh-521538369/", "_blank") },
     ],
 
     Edit: [
@@ -506,7 +505,7 @@ const TopBar = ({ title, activeMenu, setActiveMenu }: TopBarProps) => {
 
     Help: [
       { label: "Portfolio Help" },
-      { label: "View Source Code", action: () => window.open("https://github.com/cyb3rghoul", "_blank") },
+      { label: "View Source Code", action: () => window.open("https://github.com/rishav690999", "_blank") },
     ],
   };
 
@@ -596,7 +595,7 @@ const App = () => {
   }, []);
 
   const appIcons: AppIcon[] = [
-    { id: 'finder', name: 'Finder', icon: <User size={28} className="text-white drop-shadow-md" />, color: 'bg-gradient-to-b from-blue-400 to-blue-600' },
+    { id: 'finder', name: 'About Rishav', icon: <User size={28} className="text-white drop-shadow-md" />, color: 'bg-gradient-to-b from-blue-400 to-blue-600' },
     { id: 'safari', name: 'Safari', icon: <Globe size={28} className="text-white drop-shadow-md" />, color: 'bg-gradient-to-b from-blue-300 to-blue-500' },
     { id: 'vscode', name: 'Code', icon: <Code size={28} className="text-white drop-shadow-md" />, color: 'bg-gradient-to-b from-gray-700 to-gray-900' },
     { id: 'terminal', name: 'Terminal', icon: <Terminal size={28} className="text-white drop-shadow-md" />, color: 'bg-gradient-to-b from-gray-800 to-black' },
@@ -607,7 +606,7 @@ const App = () => {
   const [windows, setWindows] = useState<WindowState[]>([
     { 
       id: 'finder', 
-      title: 'Harsh Shukla', 
+      title: 'Rishav Singh', 
       icon: <User size={16} />, 
       component: <AboutContent />, 
       isOpen: true, 
@@ -655,7 +654,7 @@ const App = () => {
       const appData = appIcons.find(a => a.id === appId);
       let content, title = appData?.name || 'App', size = { width: 800, height: 600 };
       switch(appId) {
-        case 'finder': content = <AboutContent />; title = 'Harsh Shukla'; break;
+        case 'finder': content = <AboutContent />; title = 'Rishav Singh'; break;
         case 'safari': content = <BrowserContent />; title = 'Safari'; size = { width: 950, height: 680 }; break;
         case 'vscode': content = <SkillsExperienceContent />; title = 'VS Code'; break;
         case 'terminal': content = <TerminalContent />; title = 'Terminal'; size = { width: 600, height: 400 }; break;
@@ -711,7 +710,7 @@ const App = () => {
       />
       
       {/* Top Menu Bar */}
-      <TopBar title={activeWindow ? windows.find(w => w.id === activeWindow)?.title || '' : 'Finder'} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+      <TopBar title={activeWindow ? windows.find(w => w.id === activeWindow)?.title || '' : 'Rishav Singh'} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
 
       {/* Desktop Area */}
       <div className="relative w-full h-full pt-8 pb-24 z-10">

@@ -1,11 +1,11 @@
-# 🖥️ Harsh's Portfolio OS
+# 🖥️ Rishav Singh's Portfolio OS
 
-[![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React-19+-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3+-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-5+-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4+-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-7+-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 
-> A fully interactive, macOS-inspired portfolio experience that transforms the traditional resume into an immersive desktop operating system simulation. Built with modern web technologies to showcase software engineering expertise through an innovative, playful interface.
+> A fully interactive, macOS-inspired portfolio experience that transforms the traditional resume into an immersive desktop operating system simulation. Built with modern web technologies to showcase full-stack development expertise through an innovative, playful interface.
 
 **🔗 Live Demo:** 
 
@@ -252,7 +252,7 @@ Feel free to use this as inspiration for your own portfolio, but please:
 
 ## 👨‍💻 About Me
 
-**Harsh Shukla**  
+**Rishav Singh**  
 *Software Development Engineer @ Hewlett Packard Enterprise*
 
 Passionate about building scalable web applications and creating delightful user experiences. This portfolio represents my love for clean code, modern design, and pushing the boundaries of what's possible in the browser.
