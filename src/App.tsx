@@ -1,4 +1,6 @@
+
 import React, { useState, useEffect, useRef } from 'react';
+
 import { 
   Terminal, User, Code, Gamepad2, Globe, X, Minus, Maximize2, Minimize2, 
   Github, Instagram, Linkedin, BookOpen, Search, Wifi, Battery, Play, RotateCcw, 
@@ -46,7 +48,7 @@ const AboutContent = () => (
            👋 About Me
         </h2>
         <p className="leading-relaxed text-gray-600 text-lg">
-          I am a passionate <span className="font-semibold text-green-700">MERN Stack Developer</span> from Nepal, currently studying in Class 11 (Science). 
+          I am a passionate <span className="font-semibold text-green-700">MERN Stack Developer</span> from Nepal, currently studying in Class 12 (Science). 
           I focus on building modern, scalable web applications and continuously improving my skills through real-world projects. 
           Currently working on an AI-powered flight booking website and a React Native alcohol delivery app for a client.
         </p>
