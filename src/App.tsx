@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
+import profile from "./assets/portfolio_image.png";
+
 
 import { 
   Terminal, User, Code, Gamepad2, Globe, X, Minus, Maximize2, Minimize2, 
@@ -35,7 +37,7 @@ const AboutContent = () => (
   <div className="p-8 font-sans text-gray-800 h-full overflow-y-auto bg-gradient-to-br from-white to-gray-50">
     <div className="flex flex-col items-center mb-8">
       <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 mb-4 shadow-xl flex items-center justify-center text-white text-4xl font-bold border-4 border-white overflow-hidden relative">
-         <span className="z-10"><img src="src/assets/portfolio_image.png" alt="image" /></span>
+         <span className="z-10"><img src={profile} alt="image" className="w-full h-full object-cover" /></span>
          <div className="absolute inset-0 bg-black/10"></div>
       </div>
       <h1 className="text-4xl font-bold text-gray-900 tracking-tight">Rishav Singh</h1>
@@ -141,7 +143,7 @@ const BrowserContent = () => (
       </div>
       <div className="flex-1 bg-white rounded-lg border border-gray-300 px-4 py-2 text-sm text-gray-700 flex items-center shadow-inner">
         <Search size={14} className="mr-3 text-gray-400" />
-        portfolio.harsh-shukla.dev
+        portfolio.rishav-singh.dev
       </div>
     </div>
 
@@ -302,7 +304,7 @@ const PhotoBooth = () => {
 };
 
 const TerminalContent = () => {
-  const [history, setHistory] = useState<string[]>(["Welcome to HarshOS v1.0", "Type 'help' to see commands."]);
+  const [history, setHistory] = useState<string[]>(["Welcome to Rishav Singh OS v1.0", "Type 'help' to see commands."]);
   const [input, setInput] = useState("");
   const bottomRef = useRef<HTMLDivElement>(null);
 
