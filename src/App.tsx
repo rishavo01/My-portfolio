@@ -6,7 +6,7 @@ import profile from "./assets/portfolio_image.png";
 import { 
   Terminal, User, Code, Gamepad2, Globe, X, Minus, Maximize2, Minimize2, 
   Github, Instagram, Linkedin, BookOpen, Search, Wifi, Battery, Play, RotateCcw, 
-  Aperture, Download, Twitter, Monitor
+  Aperture, Download, Twitter
 } from 'lucide-react';
 
 // --- Types & Interfaces ---
@@ -34,44 +34,44 @@ interface AppIcon {
 // --- Content Components ---
 
 const AboutContent = () => (
-  <div className="p-8 font-sans text-gray-800 h-full overflow-y-auto bg-gradient-to-br from-white to-gray-50">
-    <div className="flex flex-col items-center mb-8">
-      <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 mb-4 shadow-xl flex items-center justify-center text-white text-4xl font-bold border-4 border-white overflow-hidden relative">
+  <div className="p-4 sm:p-6 md:p-8 font-sans text-gray-800 h-full overflow-y-auto bg-gradient-to-br from-white to-gray-50">
+    <div className="flex flex-col items-center mb-6 sm:mb-8">
+      <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 mb-3 sm:mb-4 shadow-xl flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold border-4 border-white overflow-hidden relative">
          <span className="z-10"><img src={profile} alt="image" className="w-full h-full object-cover" /></span>
          <div className="absolute inset-0 bg-black/10"></div>
       </div>
-      <h1 className="text-4xl font-bold text-gray-900 tracking-tight">Rishav Singh</h1>
-      <p className="text-blue-600 font-medium mt-1">MERN Stack Developer | Class 12 Science | Nepal</p>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight text-center">Rishav Singh</h1>
+      <p className="text-blue-600 font-medium mt-1 text-xs sm:text-sm md:text-base text-center px-2">MERN Stack Developer | Class 12 Science | Nepal</p>
     </div>
     
-    <div className="max-w-3xl mx-auto space-y-8 pb-8">
-      <section className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-        <h2 className="text-xl font-bold border-b pb-3 mb-4 text-gray-800 flex items-center gap-2">
+    <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8 pb-8">
+      <section className="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100">
+        <h2 className="text-lg sm:text-xl font-bold border-b pb-2 sm:pb-3 mb-3 sm:mb-4 text-gray-800 flex items-center gap-2">
            👋 About Me
         </h2>
-        <p className="leading-relaxed text-gray-600 text-lg">
+        <p className="leading-relaxed text-gray-600 text-sm sm:text-base md:text-lg">
           I am a passionate <span className="font-semibold text-green-700">MERN Stack Developer</span> from Nepal, currently studying in Class 12 (Science). 
           I focus on building modern, scalable web applications and continuously improving my skills through real-world projects. 
           Currently working on an AI-powered flight booking website and a React Native alcohol delivery app for a client.
         </p>
       </section>
 
-      <section className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-        <h2 className="text-xl font-bold border-b pb-3 mb-4 text-gray-800 flex items-center gap-2">
+      <section className="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100">
+        <h2 className="text-lg sm:text-xl font-bold border-b pb-2 sm:pb-3 mb-3 sm:mb-4 text-gray-800 flex items-center gap-2">
            🏆 Achievements
         </h2>
-        <ul className="space-y-3">
+        <ul className="space-y-2 sm:space-y-3">
           <li className="flex items-start">
             <span className="w-2 h-2 mt-2 mr-3 bg-blue-500 rounded-full flex-shrink-0"></span>
-            <span className="text-gray-700">Full-stack MERN Developer with focus on scalable web applications</span>
+            <span className="text-gray-700 text-sm sm:text-base">Full-stack MERN Developer with focus on scalable web applications</span>
           </li>
           <li className="flex items-start">
             <span className="w-2 h-2 mt-2 mr-3 bg-purple-500 rounded-full flex-shrink-0"></span>
-            <span className="text-gray-700">AI-powered flight booking platform developer</span>
+            <span className="text-gray-700 text-sm sm:text-base">AI-powered flight booking platform developer</span>
           </li>
           <li className="flex items-start">
             <span className="w-2 h-2 mt-2 mr-3 bg-green-500 rounded-full flex-shrink-0"></span>
-            <span className="text-gray-700">React Native application development experience</span>
+            <span className="text-gray-700 text-sm sm:text-base">React Native application development experience</span>
           </li>
         </ul>
       </section>
@@ -80,49 +80,49 @@ const AboutContent = () => (
 );
 
 const SkillsExperienceContent = () => (
-  <div className="bg-[#1e1e1e] h-full text-gray-300 font-mono text-sm flex flex-col">
-    <div className="flex items-center px-4 py-2 bg-[#252526] border-b border-[#1e1e1e] select-none">
-      <span className="text-blue-400 mr-2 flex items-center gap-1"><Code size={12}/> resume.json</span>
-      <span className="text-xs text-gray-500 ml-auto">UTF-8</span>
+  <div className="bg-[#1e1e1e] h-full text-gray-300 font-mono text-xs sm:text-sm flex flex-col overflow-hidden">
+    <div className="flex items-center px-3 sm:px-4 py-2 bg-[#252526] border-b border-[#1e1e1e] select-none flex-shrink-0 overflow-x-auto">
+      <span className="text-blue-400 mr-2 flex items-center gap-1 flex-shrink-0"><Code size={12}/> resume.json</span>
+      <span className="text-xs text-gray-500 ml-auto flex-shrink-0">UTF-8</span>
     </div>
-    <div className="flex-1 overflow-auto p-4 cursor-text selection:bg-blue-500/30">
+    <div className="flex-1 overflow-auto p-3 sm:p-4 cursor-text selection:bg-blue-500/30">
       <div className="space-y-1">
         <span className="text-purple-400">const</span> <span className="text-yellow-300">profile</span> <span className="text-white">=</span> <span className="text-yellow-300">{`{`}</span>
         
-        <div className="pl-6">
+        <div className="pl-4 sm:pl-6">
           <span className="text-blue-300">"skills"</span>: [<br/>
-            <span className="pl-4 text-green-300">"JavaScript", "React.js", "React Native", "Node.js", "MongoDB", "TailwindCSS", "Express.js", "Web Development"</span><br/>
+            <span className="pl-3 sm:pl-4 text-green-300 inline-block break-words">"JavaScript", "React.js", "React Native", "Node.js", "MongoDB", "TailwindCSS", "Express.js", "Web Development"</span><br/>
           ],
         </div>
 
-        <div className="pl-6 mt-2">
+        <div className="pl-4 sm:pl-6 mt-2">
           <span className="text-blue-300">"experience"</span>: [
-          <div className="pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
+          <div className="pl-3 sm:pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
             <span className="text-yellow-300">{`{`}</span><br/>
-            <span className="pl-4 text-sky-300">"project"</span>: <span className="text-orange-300">"AI-powered Flight Booking Website"</span>,<br/>
-            <span className="pl-4 text-sky-300">"role"</span>: <span className="text-orange-300">"Full-stack Developer"</span>,<br/>
-            <span className="pl-4 text-sky-300">"status"</span>: <span className="text-orange-300">"In Progress"</span>,<br/>
-            <span className="pl-4 text-sky-300">"tech"</span>: <span className="text-orange-300">"MERN Stack with AI Integration"</span><br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"project"</span>: <span className="text-orange-300">"AI-powered Flight Booking Website"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"role"</span>: <span className="text-orange-300">"Full-stack Developer"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"status"</span>: <span className="text-orange-300">"In Progress"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"tech"</span>: <span className="text-orange-300">"MERN Stack with AI Integration"</span><br/>
             <span className="text-yellow-300">{`},`}</span>
           </div>
-          <div className="pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
+          <div className="pl-3 sm:pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
             <span className="text-yellow-300">{`{`}</span><br/>
-            <span className="pl-4 text-sky-300">"project"</span>: <span className="text-orange-300">"React Native Alcohol Delivery App"</span>,<br/>
-            <span className="pl-4 text-sky-300">"role"</span>: <span className="text-orange-300">"Mobile Developer"</span>,<br/>
-            <span className="pl-4 text-sky-300">"client"</span>: <span className="text-orange-300">"Commercial Client"</span>,<br/>
-            <span className="pl-4 text-sky-300">"tech"</span>: <span className="text-orange-300">"React Native, Firebase"</span><br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"project"</span>: <span className="text-orange-300">"React Native Alcohol Delivery App"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"role"</span>: <span className="text-orange-300">"Mobile Developer"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"client"</span>: <span className="text-orange-300">"Commercial Client"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"tech"</span>: <span className="text-orange-300">"React Native, Firebase"</span><br/>
             <span className="text-yellow-300">{`}`}</span>
           </div>
           ],
         </div>
 
-        <div className="pl-6 mt-2">
+        <div className="pl-4 sm:pl-6 mt-2">
           <span className="text-blue-300">"education"</span>: [
-          <div className="pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
+          <div className="pl-3 sm:pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
             <span className="text-yellow-300">{`{`}</span><br/>
-            <span className="pl-4 text-sky-300">"current"</span>: <span className="text-orange-300">"Class 11 Science"</span>,<br/>
-            <span className="pl-4 text-sky-300">"location"</span>: <span className="text-orange-300">"Nepal"</span>,<br/>
-            <span className="pl-4 text-sky-300">"focus"</span>: <span className="text-orange-300">"Full-stack Web Development"</span><br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"current"</span>: <span className="text-orange-300">"Class 11 Science"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"location"</span>: <span className="text-orange-300">"Nepal"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"focus"</span>: <span className="text-orange-300">"Full-stack Web Development"</span><br/>
             <span className="text-yellow-300">{`}`}</span>
           </div>
           ],
@@ -135,75 +135,75 @@ const SkillsExperienceContent = () => (
 
 const BrowserContent = () => (
   <div className="flex flex-col h-full bg-white">
-    <div className="bg-gray-100 border-b border-gray-200 p-3 flex items-center space-x-3 shadow-sm z-10">
+    <div className="bg-gray-100 border-b border-gray-200 p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 shadow-sm z-10 flex-shrink-0">
       <div className="flex space-x-2">
-        <div className="w-3 h-3 rounded-full bg-red-400"></div>
-        <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-        <div className="w-3 h-3 rounded-full bg-green-400"></div>
+        <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-400"></div>
+        <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-yellow-400"></div>
+        <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-400"></div>
       </div>
-      <div className="flex-1 bg-white rounded-lg border border-gray-300 px-4 py-2 text-sm text-gray-700 flex items-center shadow-inner">
-        <Search size={14} className="mr-3 text-gray-400" />
-        portfolio.rishav-singh.dev
+      <div className="flex-1 bg-white rounded-lg border border-gray-300 px-2 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm text-gray-700 flex items-center shadow-inner">
+        <Search size={14} className="mr-2 sm:mr-3 text-gray-400" />
+        <span className="truncate">portfolio.rishav-singh.dev</span>
       </div>
     </div>
 
-    <div className="flex-1 overflow-auto p-6 bg-gray-50">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+    <div className="flex-1 overflow-auto p-3 sm:p-4 md:p-6 bg-gray-50">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 pb-12">
         
         {/* Research */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-gray-800">
-            <BookOpen className="text-blue-500" /> Research
+        <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <h2 className="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 flex items-center gap-2 text-gray-800">
+            <BookOpen size={20} className="sm:text-blue-500 flex-shrink-0" /> <span>Research</span>
           </h2>
           <div className="block group">
-            <h3 className="font-bold text-lg text-gray-800 group-hover:text-blue-600 transition-colors">Timestamp extraction and Log classification</h3>
+            <h3 className="font-bold text-base sm:text-lg text-gray-800 group-hover:text-blue-600 transition-colors">Timestamp extraction and Log classification</h3>
             <p className="text-xs font-semibold text-blue-500 uppercase tracking-wide mt-1">ETESM-2025 • Jun 2025</p>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Presented a comparative study on using Supervised Machine Learning for system log analysis.</p>
+            <p className="text-xs sm:text-sm text-gray-600 mt-2 leading-relaxed">Presented a comparative study on using Supervised Machine Learning for system log analysis.</p>
           </div>
         </div>
 
         {/* Socials */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-gray-800">
-            <Globe className="text-green-500" /> Socials
+        <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <h2 className="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 flex items-center gap-2 text-gray-800">
+            <Globe size={20} className="sm:text-green-500 flex-shrink-0" /> <span>Socials</span>
           </h2>
-          <div className="grid grid-cols-2 gap-3">
-            <a href="https://www.linkedin.com/in/rishav-singh-521538369/" target="_blank" rel="noreferrer" className="flex items-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors gap-3">
-              <Linkedin size={20} className="text-blue-700" /> <span className="text-sm font-medium">LinkedIn</span>
+          <div className="grid grid-cols-2 gap-2 sm:gap-3">
+            <a href="https://www.linkedin.com/in/rishav-singh-521538369/" target="_blank" rel="noreferrer" className="flex items-center p-2 sm:p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors gap-2 sm:gap-3">
+              <Linkedin size={18} className="text-blue-700 flex-shrink-0" /> <span className="text-xs sm:text-sm font-medium truncate">LinkedIn</span>
             </a>
-            <a href="https://github.com/rishav690999" target="_blank" rel="noreferrer" className="flex items-center p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors gap-3">
-              <Github size={20} className="text-gray-900" /> <span className="text-sm font-medium">GitHub</span>
+            <a href="https://github.com/rishav690999" target="_blank" rel="noreferrer" className="flex items-center p-2 sm:p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors gap-2 sm:gap-3">
+              <Github size={18} className="text-gray-900 flex-shrink-0" /> <span className="text-xs sm:text-sm font-medium truncate">GitHub</span>
             </a>
-            <a href="https://www.instagram.com/rishav690999/" className="flex items-center p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors gap-3">
-              <Instagram size={20} className="text-pink-600" /> <span className="text-sm font-medium">@rishav690999</span>
+            <a href="https://www.instagram.com/rishav690999/" className="flex items-center p-2 sm:p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors gap-2 sm:gap-3">
+              <Instagram size={18} className="text-pink-600 flex-shrink-0" /> <span className="text-xs sm:text-sm font-medium truncate">Instagram</span>
             </a>
-             <a href="https://x.com/Rishav60999" className="flex items-center p-3 bg-black rounded-lg hover:bg-gray-800 transition-colors gap-3">
-              <Twitter size={20} className="text-white" /> <span className="text-sm font-medium text-white">@Rishav60999</span>
+             <a href="https://x.com/Rishav60999" className="flex items-center p-2 sm:p-3 bg-black rounded-lg hover:bg-gray-800 transition-colors gap-2 sm:gap-3">
+              <Twitter size={18} className="text-white flex-shrink-0" /> <span className="text-xs sm:text-sm font-medium text-white truncate">Twitter</span>
             </a>
           </div>
         </div>
 
         {/* Projects */}
-        <div className="col-span-1 md:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <h2 className="text-2xl font-bold mb-6 text-gray-800">Featured Projects</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="col-span-1 md:col-span-2 bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <h2 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-800">Featured Projects</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
             
-            <div className="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
-              <h3 className="font-bold text-lg text-blue-600">AI Flight Booking</h3>
+            <div className="border border-gray-200 rounded-xl p-3 sm:p-4 hover:border-blue-300 transition-colors">
+              <h3 className="font-bold text-base sm:text-lg text-blue-600">AI Flight Booking</h3>
               <p className="text-xs text-gray-500 mt-1 mb-2">MERN Stack, AI Integration</p>
-              <p className="text-sm text-gray-600">Intelligent flight booking platform with AI-powered recommendations and dynamic pricing using machine learning.</p>
+              <p className="text-xs sm:text-sm text-gray-600">Intelligent flight booking platform with AI-powered recommendations and dynamic pricing using machine learning.</p>
             </div>
 
-            <div className="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
-              <h3 className="font-bold text-lg text-blue-600">Alcohol Delivery App</h3>
+            <div className="border border-gray-200 rounded-xl p-3 sm:p-4 hover:border-blue-300 transition-colors">
+              <h3 className="font-bold text-base sm:text-lg text-blue-600">Alcohol Delivery App</h3>
               <p className="text-xs text-gray-500 mt-1 mb-2">React Native, Firebase, Real-time</p>
-              <p className="text-sm text-gray-600">Full-featured mobile app for alcohol delivery with real-time order tracking, payment integration, and user authentication.</p>
+              <p className="text-xs sm:text-sm text-gray-600">Full-featured mobile app for alcohol delivery with real-time order tracking, payment integration, and user authentication.</p>
             </div>
 
-            <div className="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
-              <h3 className="font-bold text-lg text-blue-600">Portfolio OS</h3>
+            <div className="border border-gray-200 rounded-xl p-3 sm:p-4 hover:border-blue-300 transition-colors">
+              <h3 className="font-bold text-base sm:text-lg text-blue-600">Portfolio OS</h3>
               <p className="text-xs text-gray-500 mt-1 mb-2">React, TypeScript, Tailwind</p>
-              <p className="text-sm text-gray-600">Interactive macOS-inspired portfolio website showcasing projects, skills, and professional experience through immersive desktop environment.</p>
+              <p className="text-xs sm:text-sm text-gray-600">Interactive macOS-inspired portfolio website showcasing projects, skills, and professional experience through immersive desktop environment.</p>
             </div>
 
           </div>
@@ -255,15 +255,15 @@ const PhotoBooth = () => {
   };
 
   return (
-    <div className="h-full bg-gray-900 flex flex-col items-center justify-center p-4">
+    <div className="h-full bg-gray-900 flex flex-col items-center justify-center p-2 sm:p-4">
       {error ? (
         <div className="text-red-400 text-center">
-          <p>{error}</p>
-          <p className="text-sm text-gray-500 mt-2">Please allow camera permissions.</p>
+          <p className="text-sm sm:text-base">{error}</p>
+          <p className="text-xs text-gray-500 mt-2">Please allow camera permissions.</p>
         </div>
       ) : (
         <>
-          <div className="relative w-full max-w-md bg-black rounded-lg overflow-hidden shadow-2xl border border-gray-800">
+          <div className="relative w-full max-w-xs sm:max-w-sm bg-black rounded-lg overflow-hidden shadow-2xl border border-gray-800 flex-shrink-0">
              {!photo ? (
                <video ref={videoRef} autoPlay playsInline muted className="w-full h-auto transform scale-x-[-1]" />
              ) : (
@@ -271,26 +271,26 @@ const PhotoBooth = () => {
              )}
           </div>
           
-          <div className="mt-6 flex space-x-4">
+          <div className="mt-4 sm:mt-6 flex flex-wrap gap-2 sm:gap-4 justify-center">
             {!photo ? (
               <button 
                 onClick={takePhoto} 
-                className="w-16 h-16 rounded-full bg-white border-4 border-gray-300 shadow-lg hover:bg-gray-200 transition-colors flex items-center justify-center active:scale-95"
+                className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white border-4 border-gray-300 shadow-lg hover:bg-gray-200 transition-colors flex items-center justify-center active:scale-95"
               >
-                <div className="w-12 h-12 rounded-full border-2 border-black/10"></div>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-black/10"></div>
               </button>
             ) : (
-              <div className="flex space-x-4">
+              <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
                 <button 
                   onClick={() => setPhoto(null)} 
-                  className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition"
+                  className="px-3 sm:px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition text-sm sm:text-base"
                 >
                   Retake
                 </button>
                 <a 
                   href={photo} 
                   download="photo-booth.png" 
-                  className="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-500 transition flex items-center gap-2"
+                  className="px-3 sm:px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-500 transition flex items-center gap-2 text-sm sm:text-base"
                 >
                   <Download size={16} /> Save
                 </a>
@@ -347,18 +347,20 @@ const TerminalContent = () => {
   };
 
   return (
-    <div className="bg-[#1e1e1e] text-green-400 font-mono p-4 h-full overflow-auto text-sm">
-      {history.map((line, i) => (
-        <div key={i} className="mb-1 whitespace-pre-wrap">{line}</div>
-      ))}
-      <div className="flex items-center">
+    <div className="bg-[#1e1e1e] text-green-400 font-mono p-2 sm:p-4 h-full overflow-auto text-xs sm:text-sm flex flex-col">
+      <div className="flex-1 overflow-auto">
+        {history.map((line, i) => (
+          <div key={i} className="mb-1 whitespace-pre-wrap break-words">{line}</div>
+        ))}
+      </div>
+      <div className="flex items-center flex-shrink-0 mt-2">
         <span className="mr-2 text-blue-400">➜  ~</span>
         <input 
           type="text" 
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleCommand}
-          className="bg-transparent outline-none flex-1 text-green-400"
+          className="bg-transparent outline-none flex-1 text-green-400 min-w-0"
           autoFocus
           spellCheck={false}
         />
@@ -423,10 +425,10 @@ const SnakeGame = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-full bg-gray-900 text-white p-4 relative overflow-hidden">
-      <div className="absolute top-4 left-4 font-mono text-xl text-green-400">SCORE: {score}</div>
+    <div className="flex flex-col items-center justify-center h-full bg-gray-900 text-white p-2 sm:p-4 relative overflow-hidden">
+      <div className="absolute top-2 sm:top-4 left-2 sm:left-4 font-mono text-lg sm:text-xl text-green-400">SCORE: {score}</div>
       <div className="relative bg-black border-4 border-gray-700 rounded-lg shadow-2xl" 
-           style={{ width: '100%', maxWidth: '400px', aspectRatio: '1/1', display: 'grid', gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}>
+           style={{ width: 'min(100%, 400px)', aspectRatio: '1/1', display: 'grid', gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}>
          {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, i) => {
             const x = i % GRID_SIZE;
             const y = Math.floor(i / GRID_SIZE);
@@ -436,8 +438,8 @@ const SnakeGame = () => {
          })}
          {(!isPlaying || gameOver) && (
            <div className="absolute inset-0 bg-black/80 flex flex-col items-center justify-center z-10">
-             <h2 className="text-3xl font-bold mb-4 text-green-400 font-mono">{gameOver ? 'GAME OVER' : 'SNAKE OS'}</h2>
-             <button onClick={startGame} className="flex items-center gap-2 px-6 py-2 bg-green-600 hover:bg-green-500 text-white rounded-full font-bold transition">
+             <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-green-400 font-mono">{gameOver ? 'GAME OVER' : 'SNAKE OS'}</h2>
+             <button onClick={startGame} className="flex items-center gap-2 px-4 sm:px-6 py-2 bg-green-600 hover:bg-green-500 text-white rounded-full font-bold transition text-sm sm:text-base">
                {gameOver ? <RotateCcw size={18}/> : <Play size={18}/>} {gameOver ? 'Retry' : 'Start'}
              </button>
            </div>
@@ -585,17 +587,24 @@ const App = () => {
   const [zIndexCounter, setZIndexCounter] = useState(10);
   const [draggedWindow, setDraggedWindow] = useState<string | null>(null);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
-  const [isMobile, setIsMobile] = useState(false); // Mobile state check
+  const [screenSize, setScreenSize] = useState<'mobile' | 'tablet' | 'desktop'>('desktop'); // Screen size tracking
+  const [selectedWindowId, setSelectedWindowId] = useState<string | null>(null); // For mobile tab navigation
   const dragRef = useRef<{ id: string; startX: number; startY: number; initialLeft: number; initialTop: number } | null>(null);
 
   useEffect(() => {
     // Check screen size on mount and resize
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768); // 768px is a common tablet/mobile breakpoint
+    const checkScreenSize = () => {
+      if (window.innerWidth < 640) {
+        setScreenSize('mobile');
+      } else if (window.innerWidth < 1024) {
+        setScreenSize('tablet');
+      } else {
+        setScreenSize('desktop');
+      }
     };
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
   const appIcons: AppIcon[] = [
@@ -645,12 +654,15 @@ const App = () => {
       if (existingWindow.isMinimized) {
         setWindows(prev => prev.map(w => w.id === appId ? { ...w, isMinimized: false, zIndex: zIndexCounter + 1 } : w));
         setActiveWindow(appId);
+        if (screenSize !== 'desktop') setSelectedWindowId(appId);
         setZIndexCounter(prev => prev + 1);
       } else if (activeWindow === appId) {
         setWindows(prev => prev.map(w => w.id === appId ? { ...w, isMinimized: true } : w));
         setActiveWindow(null);
+        if (screenSize !== 'desktop') setSelectedWindowId(null);
       } else {
         setActiveWindow(appId);
+        if (screenSize !== 'desktop') setSelectedWindowId(appId);
         setZIndexCounter(prev => prev + 1);
         setWindows(prev => prev.map(w => w.id === appId ? { ...w, zIndex: zIndexCounter + 1 } : w));
       }
@@ -669,14 +681,25 @@ const App = () => {
       setWindows(prev => [...prev, { id: appId, title, icon: appData?.icon, component: content, isOpen: true, isMinimized: false, isMaximized: false, zIndex: zIndexCounter + 1, position: { x: 80 + (windows.length * 30), y: 80 + (windows.length * 30) }, size }]);
       setZIndexCounter(prev => prev + 1);
       setActiveWindow(appId);
+      if (screenSize !== 'desktop') setSelectedWindowId(appId);
     }
   };
 
-  const closeWindow = (id: string, e?: React.MouseEvent) => { e?.stopPropagation(); setWindows(prev => prev.filter(w => w.id !== id)); if (activeWindow === id) setActiveWindow(null); };
+  const closeWindow = (id: string, e?: React.MouseEvent) => { e?.stopPropagation(); setWindows(prev => prev.filter(w => w.id !== id)); if (activeWindow === id) setActiveWindow(null); if (selectedWindowId === id) setSelectedWindowId(null); };
   const minimizeWindow = (id: string, e?: React.MouseEvent) => { e?.stopPropagation(); setWindows(prev => prev.map(w => w.id === id ? { ...w, isMinimized: true } : w)); setActiveWindow(null); };
   const maximizeWindow = (id: string, e?: React.MouseEvent) => { e?.stopPropagation(); setWindows(prev => prev.map(w => w.id === id ? { ...w, isMaximized: !w.isMaximized } : w)); };
   const focusWindow = (id: string) => { if (activeWindow !== id) { setZIndexCounter(prev => prev + 1); setWindows(prev => prev.map(w => w.id === id ? { ...w, zIndex: zIndexCounter + 1 } : w)); setActiveWindow(id); } };
-  const startDrag = (e: React.MouseEvent, id: string) => { if (windows.find(w => w.id === id)?.isMaximized) return; focusWindow(id); setDraggedWindow(id); const wObj = windows.find(w => w.id === id); if (wObj) dragRef.current = { id, startX: e.clientX, startY: e.clientY, initialLeft: wObj.position.x, initialTop: wObj.position.y }; };
+  const startDrag = (e: React.MouseEvent | React.TouchEvent, id: string) => { 
+    if (windows.find(w => w.id === id)?.isMaximized) return; 
+    focusWindow(id); 
+    setDraggedWindow(id); 
+    const wObj = windows.find(w => w.id === id); 
+    if (wObj) {
+      const clientX = (e as React.MouseEvent).clientX || (e as React.TouchEvent).touches?.[0]?.clientX || 0;
+      const clientY = (e as React.MouseEvent).clientY || (e as React.TouchEvent).touches?.[0]?.clientY || 0;
+      dragRef.current = { id, startX: clientX, startY: clientY, initialLeft: wObj.position.x, initialTop: wObj.position.y }; 
+    }
+  };
 
   const getDockIconPos = (appId: string) => {
     const index = appIcons.findIndex(a => a.id === appId);
@@ -685,24 +708,91 @@ const App = () => {
     return `calc(50vw + ${(index - (total - 1) / 2) * 68}px)`;
   };
 
-  // If mobile, show restriction message
-  if (isMobile) {
+  // Handle touch events for mobile dragging
+  useEffect(() => {
+    const handleTouchMove = (e: TouchEvent) => {
+      if (!dragRef.current) return;
+      const touch = e.touches[0];
+      const { id, startX, startY, initialLeft, initialTop } = dragRef.current;
+      setWindows(prev => prev.map(w => w.id === id ? { ...w, position: { x: initialLeft + (touch.clientX - startX), y: Math.max(40, initialTop + (touch.clientY - startY)) } } : w));
+    };
+    const handleTouchEnd = () => {
+      dragRef.current = null;
+      setDraggedWindow(null);
+    };
+    document.addEventListener('touchmove', handleTouchMove);
+    document.addEventListener('touchend', handleTouchEnd);
+    return () => { document.removeEventListener('touchmove', handleTouchMove); document.removeEventListener('touchend', handleTouchEnd); };
+  }, []);
+
+  // Mobile/Tablet view: show one window at a time
+  if (screenSize === 'mobile' || screenSize === 'tablet') {
+    const visibleWindows = windows.filter(w => !w.isMinimized);
+    const selectedWindow = selectedWindowId ? visibleWindows.find(w => w.id === selectedWindowId) : visibleWindows[0];
+
     return (
-      <div className="h-screen w-screen bg-gray-900 flex flex-col items-center justify-center p-6 text-center text-white">
-        <div className="w-24 h-24 bg-gray-800 rounded-2xl flex items-center justify-center mb-6 shadow-xl border border-gray-700">
-          <Monitor size={48} className="text-blue-500" />
+      <div className="h-screen w-screen overflow-hidden font-sans select-none relative text-gray-900 bg-gray-900 flex flex-col">
+        <img 
+          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" 
+          className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-100"
+          alt="MacOS Wallpaper" 
+        />
+        
+        {/* Top Menu Bar */}
+        <TopBar title={selectedWindow?.title || 'Rishav Singh'} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+
+        {/* Mobile Content Area */}
+        <div className="flex-1 relative pt-4 px-3 pb-20 overflow-hidden z-10">
+          {selectedWindow ? (
+            <div className="h-full w-full bg-white rounded-2xl shadow-2xl overflow-hidden ring-1 ring-black/10 flex flex-col flex-1">
+              <div className="h-9 bg-[#f3f3f3] border-b border-[#d1d1d1] flex items-center px-4 justify-between select-none flex-shrink-0">
+                <div className="flex space-x-2 group">
+                  <button onClick={(e) => closeWindow(selectedWindow.id, e)} className="w-3 h-3 rounded-full bg-[#ff5f57] border border-[#e0443e] hover:bg-[#ff5f57]/80 flex items-center justify-center transition-colors"><X size={8} className="text-red-900 opacity-0 group-hover:opacity-100" /></button>
+                  <button onClick={(e) => minimizeWindow(selectedWindow.id, e)} className="w-3 h-3 rounded-full bg-[#febc2e] border border-[#d89e24] hover:bg-[#febc2e]/80 flex items-center justify-center transition-colors"><Minus size={8} className="text-yellow-900 opacity-0 group-hover:opacity-100" /></button>
+                  <button onClick={(e) => maximizeWindow(selectedWindow.id, e)} className="w-3 h-3 rounded-full bg-[#28c840] border border-[#1aab29] hover:bg-[#28c840]/80 flex items-center justify-center transition-colors">{selectedWindow.isMaximized ? <Minimize2 size={8} className="text-green-900 opacity-0 group-hover:opacity-100" /> : <Maximize2 size={8} className="text-green-900 opacity-0 group-hover:opacity-100" />}</button>
+                </div>
+                <div className="text-sm font-semibold text-gray-600 flex items-center gap-2">{selectedWindow.icon && <span className="text-gray-400">{selectedWindow.icon}</span>} {selectedWindow.title}</div>
+                <div className="w-14"></div>
+              </div>
+              <div className="flex-1 overflow-y-auto bg-white relative">{selectedWindow.component}</div>
+            </div>
+          ) : (
+            <div className="h-full flex items-center justify-center text-white text-center">
+              <div>
+                <h2 className="text-2xl font-bold mb-2">No Apps Open</h2>
+                <p className="text-gray-400">Scroll down to open an app from the dock</p>
+              </div>
+            </div>
+          )}
         </div>
-        <h2 className="text-3xl font-bold mb-4">Desktop Only Experience</h2>
-        <p className="text-gray-400 max-w-md leading-relaxed text-lg">
-          This portfolio OS is designed for larger screens. <br/>
-          <span className="text-gray-500 text-base mt-2 block">
-            Kindly view on a laptop or desktop for the best interactive experience.
-          </span>
-        </p>
+
+        {/* Mobile Dock - Tab Navigation */}
+        <div className="fixed bottom-0 left-0 right-0 bg-white/20 backdrop-blur-xl border-t border-white/20 z-[10000]">
+          <div className="flex overflow-x-auto pb-2 pt-2 px-2 gap-2 max-w-full">
+            {appIcons.map((app) => {
+              const isRunning = windows.some(w => w.id === app.id);
+              const isSelected = selectedWindowId === app.id;
+              return (
+                <button
+                  key={app.id}
+                  onClick={() => {
+                    if (!isRunning) openApp(app.id);
+                    setSelectedWindowId(app.id);
+                  }}
+                  className={`flex-shrink-0 ${app.color} w-12 h-12 rounded-xl flex items-center justify-center shadow-lg transition-all duration-200 flex-col relative ${isSelected ? 'ring-2 ring-white scale-105' : 'ring-1 ring-white/20'}`}
+                >
+                  {app.icon}
+                  {isRunning && <div className="w-1 h-1 rounded-full bg-white absolute -bottom-1"></div>}
+                </button>
+              );
+            })}
+          </div>
+        </div>
       </div>
     );
   }
 
+  // Desktop view - original implementation
   return (
     <div className="h-screen w-screen overflow-hidden font-sans select-none relative text-gray-900 bg-gray-900" onClick={() => { setActiveWindow(null); setActiveMenu(null); }}>
       
@@ -750,15 +840,21 @@ const App = () => {
                    pointerEvents: win.isMinimized ? 'none' : 'auto'
                  }}
                  onMouseDown={() => focusWindow(win.id)}
+                 onTouchStart={() => focusWindow(win.id)}
                >
-                 <div className="h-9 bg-[#f3f3f3] border-b border-[#d1d1d1] flex items-center px-4 justify-between select-none" onMouseDown={(e) => startDrag(e, win.id)} onDoubleClick={(e) => maximizeWindow(win.id, e)}>
+                 <div 
+                   className="h-9 bg-[#f3f3f3] border-b border-[#d1d1d1] flex items-center px-3 sm:px-4 justify-between select-none cursor-grab active:cursor-grabbing flex-shrink-0" 
+                   onMouseDown={(e) => startDrag(e, win.id)}
+                   onTouchStart={(e) => startDrag(e, win.id)}
+                   onDoubleClick={(e) => maximizeWindow(win.id, e)}
+                 >
                     <div className="flex space-x-2 group">
                       <button onClick={(e) => closeWindow(win.id, e)} className="w-3 h-3 rounded-full bg-[#ff5f57] border border-[#e0443e] hover:bg-[#ff5f57]/80 flex items-center justify-center transition-colors"><X size={8} className="text-red-900 opacity-0 group-hover:opacity-100" /></button>
                       <button onClick={(e) => minimizeWindow(win.id, e)} className="w-3 h-3 rounded-full bg-[#febc2e] border border-[#d89e24] hover:bg-[#febc2e]/80 flex items-center justify-center transition-colors"><Minus size={8} className="text-yellow-900 opacity-0 group-hover:opacity-100" /></button>
                       <button onClick={(e) => maximizeWindow(win.id, e)} className="w-3 h-3 rounded-full bg-[#28c840] border border-[#1aab29] hover:bg-[#28c840]/80 flex items-center justify-center transition-colors">{win.isMaximized ? <Minimize2 size={8} className="text-green-900 opacity-0 group-hover:opacity-100" /> : <Maximize2 size={8} className="text-green-900 opacity-0 group-hover:opacity-100" />}</button>
                     </div>
-                    <div className="text-sm font-semibold text-gray-600 flex items-center gap-2">{win.icon && <span className="text-gray-400">{win.icon}</span>} {win.title}</div>
-                    <div className="w-14"></div>
+                    <div className="text-xs sm:text-sm font-semibold text-gray-600 flex items-center gap-1 sm:gap-2 truncate">{win.icon && <span className="text-gray-400 hidden sm:inline">{win.icon}</span>} <span className="truncate">{win.title}</span></div>
+                    <div className="w-10 sm:w-14"></div>
                  </div>
                  <div className="flex-1 overflow-hidden bg-white relative">{win.component}</div>
                </div>
