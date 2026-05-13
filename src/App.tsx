@@ -41,7 +41,8 @@ const AboutContent = () => (
          <div className="absolute inset-0 bg-black/10"></div>
       </div>
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight text-center">Rishav Singh</h1>
-      <p className="text-blue-600 font-medium mt-1 text-xs sm:text-sm md:text-base text-center px-2">MERN Stack Developer | Class 12 Science | Nepal</p>
+      <p className="text-blue-600 font-medium mt-1 text-xs sm:text-sm md:text-base text-center px-2">Full-Stack MERN & React Native Developer | Java & Python Developer | Linux & VPS Enthusiast | DevOps Learner | Nepal
+</p>
     </div>
     
     <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8 pb-8">
@@ -91,7 +92,27 @@ const SkillsExperienceContent = () => (
         
         <div className="pl-4 sm:pl-6">
           <span className="text-blue-300">"skills"</span>: [<br/>
-            <span className="pl-3 sm:pl-4 text-green-300 inline-block break-words">"JavaScript", "React.js", "React Native", "Node.js", "MongoDB", "TailwindCSS", "Express.js", "Web Development"</span><br/>
+            <span className="pl-3 sm:pl-4 text-green-300 inline-block break-words">"JavaScript",
+                "TypeScript",
+                "React.js",
+                "React Native",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "TailwindCSS",
+                "Firebase",
+                "REST APIs",
+                "MERN Stack",
+                "Git & GitHub",
+                "Linux",
+                "Arch Linux",
+                "Hyprland",
+                "Responsive UI/UX",
+                "AI Integration",
+                "cPanel Hosting",
+                "VPS Management",
+                "Web Deployment"
+            </span><br/>
           ],
         </div>
 
@@ -120,7 +141,7 @@ const SkillsExperienceContent = () => (
           <span className="text-blue-300">"education"</span>: [
           <div className="pl-3 sm:pl-4 group hover:bg-white/5 p-1 rounded transition-colors">
             <span className="text-yellow-300">{`{`}</span><br/>
-            <span className="pl-3 sm:pl-4 text-sky-300">"current"</span>: <span className="text-orange-300">"Class 11 Science"</span>,<br/>
+            <span className="pl-3 sm:pl-4 text-sky-300">"current"</span>: <span className="text-orange-300">"Class 12 Science"</span>,<br/>
             <span className="pl-3 sm:pl-4 text-sky-300">"location"</span>: <span className="text-orange-300">"Nepal"</span>,<br/>
             <span className="pl-3 sm:pl-4 text-sky-300">"focus"</span>: <span className="text-orange-300">"Full-stack Web Development"</span><br/>
             <span className="text-yellow-300">{`}`}</span>
@@ -328,7 +349,14 @@ const TerminalContent = () => {
           newHistory.push("1. AI Flight Booking Platform (MERN/AI)", "2. React Native Alcohol Delivery App", "3. Portfolio OS (React/TypeScript)");
           break;
         case 'skills':
-          newHistory.push("Languages: C++, JS, Python", "Tools: React, Node, Mongo, Git");
+          newHistory.push(
+              "Languages: JavaScript, TypeScript, Python, C++",
+              "Frontend: React.js, TailwindCSS",
+              "Backend: Node.js, Express.js, MongoDB",
+              "Mobile: React Native, Firebase",
+              "Tools: Git, GitHub, Linux, VPS, cPanel",
+              "Other: AI Integration, REST APIs, Deployment"
+            );
           break;
         case 'socials':
           newHistory.push("GitHub: rishav690999", "LinkedIn: rishav-singh-521538369", "Instagram: rishav690999", "Twitter: @Rishav60999");
